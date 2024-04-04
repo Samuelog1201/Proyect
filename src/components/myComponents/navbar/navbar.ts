@@ -8,13 +8,13 @@ function loadNavbar() {
     const content = `
         <div class="navbar">
             <div class="navbar__left">
-                <img src="../../../../images/user-icon-white.png" alt="User Icon" id="userIcon">
+                <img src="proyectoBD/src/components/myComponents/images/user-icon-white.png" alt="User Icon" id="userIcon">
             </div>
             <div class="navbar__center">
-                <img src="path/to/logo.png" alt="Logo">
+                <img src="proyectoBD/src/components/myComponents/images/logo.png" alt="Logo">
             </div>
             <div class="navbar__right">
-                <img src="../../../../images/settings-icon-white.png" alt="Settings Icon" id="settingsIcon">
+                <img src="proyectoBD/src/components/myComponents/images/settings-icon-white.png" alt="Settings Icon" id="settingsIcon">
             </div>
         </div>
     `;
