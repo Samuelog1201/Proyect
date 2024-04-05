@@ -2,6 +2,7 @@ body {
     font-family: "Rubik", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #cacaca;
 }
 
 h2 {
@@ -46,17 +47,37 @@ section {
 /* Left */ 
 
 #leftSection {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-}
-#profileDescription {
-    text-align: center;
-    align-items: center;
-    padding: 0px;
+    padding: 20px;
+    background-color: #f0f0f0;
 }
 
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#userName {
+    margin-bottom: 10px;
+}
+
+#profileDescription {
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    resize: none;
+    padding: 5px;
+}
 /* Center */  
 
 #centerSection {
@@ -99,16 +120,13 @@ button {
     align-items: center;
 }
 
+#div-volver {
+display: flex;
+flex-direction: row;
+}
+
 .cbumNotice{
     max-width: 100%;
-}
-
-.feed {
-    /* Estilos para el feed de noticias */
-}
-
-.noticia {
-    /* Estilos para cada noticia */
 }
 
 .noticia-contenido {
@@ -165,40 +183,6 @@ max-width: 50%;
     padding: 10px;
 }
 
-/* Left */
-
-#leftSection {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-}
-
-.profile {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-#userName {
-    margin-bottom: 10px;
-}
-
-#profileDescription {
-    width: 80%;
-    height: 100px;
-    border-radius: 10px;
-    resize: none;
-    padding: 5px;
-}
 footer {
     background-color: #D9D9D9;
     color: black;
@@ -209,9 +193,10 @@ footer {
     width: 100%;
 }
 
-/* Media queries para dispositivos móviles */
 
-/* Media queries para dispositivos móviles */
+
+/* Dispositivos móviles */
+
 @media only screen and (max-width: 600px) {
     /* Estilos para el navbar */
     .navbar {
@@ -237,9 +222,8 @@ footer {
         max-width: 100%;
     }
 
-    /* Estilos para la ventana flotante */
-    .ventana-flotante {
-        /* Estilos para la ventana flotante en dispositivos móviles */
+    .icono-volver {
+        max-width: 10%;
     }
 
     /* Estilos para el footer */
