@@ -1,16 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title"></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>BeDifferent Web</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="component" id="content">
-        <!-- El contenido específico se insertará aquí -->
-    </div>
-    <script src="/ProyectoBD/src/indexAbuelo.js"></script>
+    <header class="navbar">
+        <img src="images/user-icon-white.png" alt="Icono de Usuario" class="navbar-icon" id="userIcon">
+        <img src="images/logo.png" alt="Logo" class="navbar-logo">
+        <img src="images/settings-icon-white.png" alt="Icono de Configuración" class="navbar-icon" id="settingsIcon">
+    </header>
+        <main>
+             <!-- Contenido de la sección izquierda -->
+            <section id="leftSection">
+                    <div class="profile">
+                        <img src="images/user-icon-black.png" alt="Avatar de Usuario" class="userAvatar">
+
+                         <!-- Nombre de usuario -->
+
+                        <h2 id="userName">Nombre de Usuario</h2>
+                        <button id="editUserNameButton">Editar Nombre de Usuario</button>
+                        <div>
+
+                        <!-- Descripción -->
+                            <h1>Descripción del usuario</h1>
+                             <h2 id="profileDescription" contenteditable="false">Tu descripción</h2>
+                            <button id="editProfileDescriptionButton">Editar Descripción</button>
+                        </div>
+                </section>
+            </section>
+
+             <!-- Contenido de la sección central -->
+            <section id="centerSection">
+                <h1>PUBLICACIONES</h1>
+                <form id="tweetForm">
+                    <h4>Tu publicacion</h4>
+                    <textarea id="tweetContent" placeholder="Escribe tu mensaje aquí"></textarea>
+                    <button type="submit">Post</button>
+                </form>
+                <div class="tweetCard">
+                    <div class="userDetails">
+                        <img class="userAvatar" src="images/user-icon-black.png" alt="Logo del usuario">
+                        <span class="userName">Nombre de Usuario</span>
+                    </div>
+                    <div id="tweetContainer"></div>
+                    <div class="tweetActions">
+                        <img class="heartIcon" src="images/heart-icon-white.png" alt="Heart Icon">
+                        <img class="saveIcon" src="images/save-icon-white.png" alt="Save Icon">
+                    </div>
+                </div>
+            </section>
+
+             <!-- Contenido de la sección derecha -->
+            <section id="rightSection">
+
+            </section>
+        </main>
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,181 @@
+body {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 400;
+}
+/* Nav Bar */
+
+.navbar {
+    background-color: #D9D9D9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 120px; /* Ajusta el tamaño según sea necesario */
+}
+
+.navbar-icon {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+}
+
+/* Left */ 
+
+#leftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#profileDescription {
+    text-align: center;
+    align-items: center;
+    padding: 0px;
+}
+
+/* Center */  
+
+#centerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userDetails {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.userName {
+    font-weight: bold;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    font-family: "Rubik", sans-serif;
+    background-color: #D9D9D9;
+    border-color: #f9f9f9;
+    border-radius: 20px;
+}
+
+/* Right */  
+
+#rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tweet */ 
+
+#tweetForm {
+    margin-bottom: 20px;
+}
+
+#tweetContent {
+    font-family: "Rubik", sans-serif;
+    background-color:#f9f9f9;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#tweetContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tweetCard {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tweetCard {
+    position: relative;
+}
+
+.tweetActions {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    padding-right: 0px;
+}
+
+.heartIcon,
+.saveIcon {
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    height: 20px;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    padding: 10px;
+}
+
+/* Left */
+
+#leftSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#userName {
+    margin-bottom: 10px;
+}
+
+#profileDescription {
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    resize: none;
+    padding: 5px;
+}
