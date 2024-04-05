@@ -99,6 +99,26 @@ button {
     align-items: center;
 }
 
+.cbumNotice{
+    max-width: 100%;
+}
+
+.feed {
+    /* Estilos para el feed de noticias */
+}
+
+.noticia {
+    /* Estilos para cada noticia */
+}
+
+.noticia-contenido {
+max-width: 50%;
+}
+
+.ventana-flotante {
+    display: none;
+    /* Estilos para la ventana flotante */
+} 
 /* Tweet */ 
 
 #tweetForm {
@@ -178,4 +198,57 @@ button {
     border-radius: 10px;
     resize: none;
     padding: 5px;
+}
+footer {
+    background-color: #D9D9D9;
+    color: black;
+    text-align: center;
+    padding: 7px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media queries para dispositivos móviles */
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    /* Estilos para el navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar-icon {
+        margin-top: 10px;
+    }
+
+    /* Estilos para el tweet form */
+    #tweetForm {
+        padding: 10px;
+    }
+
+    /* Estilos para las noticias */
+    .noticia-contenido {
+        max-width: 100%;
+    }
+
+    /* Estilos para la ventana flotante */
+    .ventana-flotante {
+        /* Estilos para la ventana flotante en dispositivos móviles */
+    }
+
+    /* Estilos para el footer */
+    footer {
+        padding: 5px 0;
+    }
+
+    /* Cambios adicionales para dispositivos móviles */
+    main {
+        flex-direction: column; /* Cambio agregado */
+    }
 }

@@ -98,3 +98,12 @@ editProfileDescriptionButton.addEventListener("click", function () {
 // Ejemplo de uso
 updateUserName("Nuevo Usuario");
 updateProfileDescription("Descripción del usuario");
+// Derecha 
+function mostrarVentanaFlotante() {
+    var ventanaFlotante = document.getElementById("ventanaFlotante");
+    ventanaFlotante.style.display = "block";
+}
+function cerrarVentanaFlotante() {
+    var ventanaFlotante = document.getElementById("ventanaFlotante");
+    ventanaFlotante.style.display = "none";
+}
