@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <title>BeDifferent Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,7 +27,8 @@
                         <img src="images/user-icon-black.png" alt="Avatar de Usuario" class="userAvatar">
 
                          <!-- Nombre de usuario -->
-
+                         <br>
+                        </h5>Usuario</h5>
                         <h2 id="userName">Nombre de Usuario</h2>
                         <button id="editUserNameButton">Editar Nombre de Usuario</button>
                         <div>
@@ -43,7 +45,7 @@
             <section id="centerSection">
                 <h1>PUBLICACIONES</h1>
                 <form id="tweetForm">
-                    <h4>Tu publicacion</h4>
+                    <h4>Tus publicaciones</h4>
                     <textarea id="tweetContent" placeholder="Escribe tu mensaje aquí"></textarea>
                     <button type="submit">Post</button>
                 </form>
@@ -59,12 +61,36 @@
                     </div>
                 </div>
             </section>
-
-             <!-- Contenido de la sección derecha -->
             <section id="rightSection">
+                <!-- Contenido de la sección derecha -->
+                <div class="feed">
+                    <div class="noticia">
+                        <h1>Últimas Noticias</h1>
+                        <p>Click en la Imagen</p>
+                        <div class="noticia-contenido">
+                            <img class="cbumNotice" src="images/cbum-notice.jpg" alt="Imagen de la noticia" onclick="mostrarVentanaFlotante()">
+                            <h1>CBUM</h1>
+                        </div>
+                        <div class="ventana-flotante" id="ventanaFlotante">
+                            <a href="#" class="cerrar" onclick="cerrarVentanaFlotante()">X</a>
+                            <img src="images/mrolympia.png" alt="Imagen de la noticia">
+                            <h3>CBUM vuelve a Ganar MrOlympia (2023)</h3>
+                            <p>En el evento más prestigioso del culturismo, el Mr. Olympia, el joven talento canadiense Chris Bumstead, conocido en el mundo del fisicoculturismo como "Cbum", se alzó con la victoria en la categoría de Classic Physique. Este triunfo marca su tercer título consecutivo en esta competencia, consolidándolo como una de las estrellas emergentes en el deporte.
 
+                                Bumstead, de 26 años, ha impresionado a los jueces y a los aficionados con su físico clásico y estético, que recuerda a la era dorada del culturismo en la década de 1970. Su dedicación y disciplina en el gimnasio, combinadas con una dieta cuidadosamente planificada, han sido clave para su éxito en el escenario del Mr. Olympia.
+                                
+                                Este logro coloca a Chris Bumstead en la élite del culturismo, junto a leyendas como Arnold Schwarzenegger y Lee Haney, quienes también han dejado una marca indeleble en la historia de esta competencia. Con su juventud y determinación, se espera que Cbum continúe dominando la categoría de Classic Physique y que siga siendo una figura destacada en el mundo del culturismo durante muchos años más.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
+        <section>
+            <footer>
+              <h1>Contactanos: </h1>
+                <p> Correo - Celular</p>  
+            </footer>
+        </section>
     <script src="scripts.js"></script>
 </body>
 </html>
