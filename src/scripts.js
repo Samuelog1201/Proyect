@@ -70,9 +70,12 @@ saveIcon.addEventListener("click", function () {
         saveIcon.src = "images/save-icon-white.png";
     }
 });
+
 // Left //
+
 var userNameElement = document.getElementById("userName");
 var profileDescriptionElement = document.getElementById("profileDescription");
+
 // Función para actualizar el nombre de usuario
 function updateUserName(name) {
     userNameElement.textContent = name;

@@ -177,9 +177,9 @@ max-width: 50%;
 
 .heartIcon,
 .saveIcon {
-    width: 20px; /* Ajusta el tamaño según sea necesario */
+    width: 20px; 
     height: 20px;
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    cursor: pointer; 
     padding: 10px;
 }
 
@@ -230,9 +230,7 @@ footer {
     footer {
         padding: 5px 0;
     }
-
-    /* Cambios adicionales para dispositivos móviles */
     main {
-        flex-direction: column; /* Cambio agregado */
+        flex-direction: column; 
     }
 }
