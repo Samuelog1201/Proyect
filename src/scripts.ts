@@ -12,11 +12,11 @@ function changeIconColor(icon: HTMLElement) {
 }
 
 // Event listeners para cambiar el color al hacer clic
-userIcon.addEventListener("click", () => {
+userIcon?.addEventListener("click", () => {
     changeIconColor(userIcon);
 });
 
-settingsIcon.addEventListener("click", () => {
+settingsIcon?.addEventListener("click", () => {
     changeIconColor(settingsIcon);
 });
 
@@ -26,14 +26,14 @@ const tweetForm = document.getElementById("tweetForm") as HTMLFormElement;
 const tweetContent = document.getElementById("tweetContent") as HTMLTextAreaElement;
 const tweetContainer = document.getElementById("tweetContainer");
 
-tweetForm.addEventListener("submit", (event) => {
+tweetForm?.addEventListener("submit", (event) => {
     event.preventDefault();
     const content = tweetContent.value.trim();
     if (content !== "") {
         const tweetCard = document.createElement("div");
-        tweetCard.classList.add("tweetCard");
+        tweetCard.classList?.add("tweetCard");
         tweetCard.textContent = content;
-        tweetContainer.appendChild(tweetCard);
+        tweetContainer?.appendChild(tweetCard);
         tweetContent.value = "";
     }
 });
@@ -70,7 +70,7 @@ function createTweetCard(tweetContent: string, userName: string, userAvatar: str
 const heartIcon = document.querySelector(".heartIcon");
 const saveIcon = document.querySelector(".saveIcon");
 
-heartIcon.addEventListener("click", () => {
+heartIcon?.addEventListener("click", () => {
     if (heartIcon.src.includes("white")) {
         heartIcon.src = "images/heart-icon-black.png";
     } else {
@@ -78,7 +78,7 @@ heartIcon.addEventListener("click", () => {
     }
 });
 
-saveIcon.addEventListener("click", () => {
+saveIcon?.addEventListener("click", () => {
     if (saveIcon.src.includes("white")) {
         saveIcon.src = "images/save-icon-black.png";
     } else {
@@ -99,7 +99,7 @@ function updateUserName(name: string) {
 
 const editUserNameButton = document.getElementById("editUserNameButton");
 
-editUserNameButton.addEventListener("click", () => {
+editUserNameButton?.addEventListener("click", () => {
     const newUserName = prompt("Ingresa un nuevo nombre de usuario:");
     if (newUserName !== null && newUserName !== "") {
         updateUserName(newUserName);
@@ -111,7 +111,7 @@ editUserNameButton.addEventListener("click", () => {
 const profileDescriptionElement = document.getElementById("profileDescription") as HTMLHeadingElement;
 const editProfileDescriptionButton = document.getElementById("editProfileDescriptionButton");
 
-editProfileDescriptionButton.addEventListener("click", () => {
+editProfileDescriptionButton?.addEventListener("click", () => {
     const currentDescription = profileDescriptionElement.textContent.trim();
     const newDescription = prompt("Ingresa una nueva descripción de perfil:", currentDescription);
     if (newDescription !== null) {
