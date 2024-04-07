@@ -5,6 +5,11 @@ body {
     background-color: #cacaca;
 }
 
+h1{
+    font-style: normal;
+
+}
+
 h2 {
     font-style: normal;
     font-weight: 400;
@@ -20,11 +25,11 @@ h2 {
 }
 
 .navbar-logo {
-    width: 120px; /* Ajusta el tamaño según sea necesario */
+    width: 120px; 
 }
 
 .navbar-icon {
-    width: 50px; /* Ajusta el tamaño según sea necesario */
+    width: 50px; 
     cursor: pointer;
 }
 
@@ -136,8 +141,15 @@ max-width: 50%;
 .ventana-flotante {
     display: none;
     /* Estilos para la ventana flotante */
-} 
+}
+
+.mrolympia {
+    max-width: 50%;
+    align-content: center;
+}
+
 /* Tweet */ 
+
 
 #tweetForm {
     margin-bottom: 20px;
