@@ -125,7 +125,7 @@ button {
     align-items: center;
 }
 
-#div-volver {
+.div-volver {
 display: flex;
 flex-direction: row;
 }
@@ -234,7 +234,7 @@ footer {
     }
 
     .icono-volver {
-        max-width: 10%;
+        max-width: 100%;
     }
 
     /* Estilos para el footer */
