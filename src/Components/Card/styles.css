@@ -1,0 +1,85 @@
+/* Tweet */ 
+
+
+#tweetForm {
+    margin-bottom: 20px;
+}
+
+#tweetContent {
+    font-family: "Rubik", sans-serif;
+    background-color:#f9f9f9;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#tweetContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tweetCard {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tweetCard {
+    position: relative;
+}
+
+.tweetActions {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    padding-right: 0px;
+}
+
+.heartIcon,
+.saveIcon {
+    width: 20px; 
+    height: 20px;
+    cursor: pointer; 
+    padding: 10px;
+}
+
+/* Center */  
+
+#centerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userDetails {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.userName {
+    font-weight: bold;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    font-family: "Rubik", sans-serif;
+    background-color: #D9D9D9;
+    border-color: #f9f9f9;
+    border-radius: 20px;
+}
+
+/* Dispositivos móviles */
+
+@media only screen and (max-width: 600px) {
+}

@@ -1,0 +1,34 @@
+/* Right */  
+
+#rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-volver {
+display: flex;
+flex-direction: row;
+}
+
+.cbumNotice{
+    max-width: 100%;
+}
+
+.noticia-contenido {
+max-width: 50%;
+}
+
+.ventana-flotante {
+    display: none;
+    /* Estilos para la ventana flotante */
+}
+
+.mrolympia {
+    max-width: 50%;
+}
+
+/* Dispositivos móviles */
+
+@media only screen and (max-width: 600px) {
+}

@@ -1,0 +1,39 @@
+/* Nav Bar */
+
+.navbar {
+    background-color: #D9D9D9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 120px; 
+}
+
+.navbar-icon {
+    width: 50px; 
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+}
+
+/* Dispositivos móviles */
+
+@media only screen and (max-width: 600px) {
+}

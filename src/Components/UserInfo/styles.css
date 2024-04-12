@@ -1,0 +1,34 @@
+/* Left */ 
+
+#leftSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#userName {
+    margin-bottom: 10px;
+}
+
+#profileDescription {
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    resize: none;
+    padding: 5px;
+}
