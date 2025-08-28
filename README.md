@@ -1,3 +1,4 @@
 Set-ExecutionPolicy -Scope CurrentUser unrestricted
 
-https://github.com/nayo22/Grupo-4-
+
+npm create vite@latest my-react-app --template react
